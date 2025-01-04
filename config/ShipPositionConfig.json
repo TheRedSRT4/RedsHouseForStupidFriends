@@ -1,0 +1,277 @@
+{
+  "levelDatas": [
+    {
+      "levelName": "CompanyBuilding",
+      "landingPosition": {
+        "x": 5.448328,
+        "y": -0.8514222,
+        "z": -53.71918
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": -99.753
+      }
+    },
+    {
+      "levelName": "Level1Experimentation",
+      "landingPosition": {
+        "x": -56.27167,
+        "y": -0.2614222,
+        "z": 16.03083
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": 29.599
+      }
+    },
+    {
+      "levelName": "Level3Vow",
+      "landingPosition": {
+        "x": 24.41833,
+        "y": 6.418578,
+        "z": 21.28083
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 180.0,
+        "z": -100.805
+      }
+    },
+    {
+      "levelName": "Level4March",
+      "landingPosition": {
+        "x": 20.79833,
+        "y": 10.15858,
+        "z": -63.55917
+      },
+      "landingRotation": {
+        "x": -87.609,
+        "y": -35.707,
+        "z": -61.307
+      }
+    },
+    {
+      "levelName": "Level5Rend",
+      "landingPosition": {
+        "x": 58.01833,
+        "y": 3.348578,
+        "z": -57.88918
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": -183.716
+      }
+    },
+    {
+      "levelName": "Level6Dine",
+      "landingPosition": {
+        "x": -8.12,
+        "y": 0.6,
+        "z": 2.15
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": 34.999
+      }
+    },
+    {
+      "levelName": "Level7Offense",
+      "landingPosition": {
+        "x": 51.17833,
+        "y": -1.281422,
+        "z": -8.609177
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": 76.388
+      }
+    },
+    {
+      "levelName": "Level8Titan",
+      "landingPosition": {
+        "x": -0.8516712,
+        "y": 1.058578,
+        "z": -37.50918
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": -395.756
+      }
+    },
+    {
+      "levelName": "Level9Artifice",
+      "landingPosition": {
+        "x": -31.07167,
+        "y": -4.511422,
+        "z": -63.25918
+      },
+      "landingRotation": {
+        "x": -92.998,
+        "y": 53.196,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "Level11Embrion",
+      "landingPosition": {
+        "x": 26.75833,
+        "y": 0.4685777,
+        "z": 4.220825
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": 89.542
+      }
+    },
+    {
+      "levelName": "SanguineScene",
+      "landingPosition": {
+        "x": 35.33639,
+        "y": -1.26546586,
+        "z": -0.0119223222
+      },
+      "landingRotation": {
+        "x": 273.43866,
+        "y": 156.058853,
+        "z": 291.56546
+      }
+    },
+    {
+      "levelName": "AfflictionLevel",
+      "landingPosition": {
+        "x": -90.72134,
+        "y": -1.42641878,
+        "z": 27.48029
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 80.11162,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "Level2Assurance",
+      "landingPosition": {
+        "x": 52.20976,
+        "y": -1.25558579,
+        "z": -48.2316742
+      },
+      "landingRotation": {
+        "x": 270.908081,
+        "y": 7.9852767,
+        "z": 262.8746
+      }
+    },
+    {
+      "levelName": "Level10Adamance",
+      "landingPosition": {
+        "x": -32.1808167,
+        "y": 6.96311235,
+        "z": -63.15144
+      },
+      "landingRotation": {
+        "x": 276.70636,
+        "y": 296.4651,
+        "z": 81.25813
+      }
+    },
+    {
+      "levelName": "HydroScene",
+      "landingPosition": {
+        "x": -36.51019,
+        "y": -7.990221,
+        "z": 24.64519
+      },
+      "landingRotation": {
+        "x": 277.881256,
+        "y": 331.699249,
+        "z": 106.533981
+      }
+    },
+    {
+      "levelName": "Eve1Level",
+      "landingPosition": {
+        "x": -55.30124,
+        "y": -1.30571687,
+        "z": -24.10889
+      },
+      "landingRotation": {
+        "x": 274.7406,
+        "y": 57.31899,
+        "z": 210.9136
+      }
+    },
+    {
+      "levelName": "PortalMoonScene",
+      "landingPosition": {
+        "x": -8.887653,
+        "y": -0.8342867,
+        "z": 8.298048
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 117.999405,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "rockScene",
+      "landingPosition": {
+        "x": 27.1966438,
+        "y": 0.543790936,
+        "z": -22.0221672
+      },
+      "landingRotation": {
+        "x": 271.214966,
+        "y": 239.7959,
+        "z": 301.5666
+      }
+    },
+    {
+      "levelName": "SnowMoonScene",
+      "landingPosition": {
+        "x": -15.26301,
+        "y": -5.73141861,
+        "z": 33.98682
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 106.210304,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "SierraScene",
+      "landingPosition": {
+        "x": -44.0524139,
+        "y": 3.06432867,
+        "z": -21.608511
+      },
+      "landingRotation": {
+        "x": 272.78894,
+        "y": 337.3484,
+        "z": 22.6375446
+      }
+    },
+    {
+      "levelName": "JunicScene",
+      "landingPosition": {
+        "x": -20.25371,
+        "y": -0.632433653,
+        "z": -21.23076
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ]
+}
