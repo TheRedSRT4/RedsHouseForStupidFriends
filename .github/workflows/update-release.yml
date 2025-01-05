@@ -23,7 +23,7 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const releaseName = "Latest"; // Set your release name here
+          const releaseName = "Latest Release"; // Set your release name here
           const releases = await github.rest.repos.listReleases({
             owner: context.repo.owner,
             repo: context.repo.repo,
