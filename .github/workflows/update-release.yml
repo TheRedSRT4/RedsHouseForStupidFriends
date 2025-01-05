@@ -3,7 +3,7 @@ name: Update Single Release
 on:
   push:
     branches:
-      - main  # Adjust this to the branch you want to trigger the action on
+      - main  # Adjust to the branch you want to trigger the action on
 
 jobs:
   update_release:
@@ -16,24 +16,26 @@ jobs:
 
     - name: Create ZIP File
       run: |
-        zip -r latest.zip . -x ".git/*"
+        zip -r repository.zip . -x ".git/*"
 
     - name: Get Release ID
       id: get_release
       uses: actions/github-script@v6
       with:
         script: |
-          const releaseName = "Latest"; // Set your release name here
+          const releaseName = "Latest Release"; // Set your release name here
           const releases = await github.rest.repos.listReleases({
             owner: context.repo.owner,
-            repo: context.repo.repo,
+            repo: context.repo.repo
           });
           const release = releases.data.find(r => r.name === releaseName);
           if (!release) {
-            throw new Error(`Release with name "${releaseName}" not found.`);
+            throw new Error(`Release with name "${releaseName}" not found`);
           }
-          return { id: release.id, upload_url: release.upload_url };
-        result-encoding: string
+          return {
+            id: release.id,
+            upload_url: release.upload_url
+          };
 
     - name: Delete Existing Asset
       uses: actions/github-script@v6
@@ -43,14 +45,14 @@ jobs:
           const assets = await github.rest.repos.listReleaseAssets({
             owner: context.repo.owner,
             repo: context.repo.repo,
-            release_id: releaseId,
+            release_id: releaseId
           });
           for (const asset of assets.data) {
             if (asset.name === "repository.zip") {
               await github.rest.repos.deleteReleaseAsset({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                asset_id: asset.id,
+                asset_id: asset.id
               });
               console.log(`Deleted asset: ${asset.name}`);
             }
@@ -62,6 +64,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.get_release.outputs.upload_url }}
-        asset_path: ./latest.zip
-        asset_name: latest.zip
+        asset_path: ./repository.zip
+        asset_name: repository.zip
         asset_content_type: application/zip
