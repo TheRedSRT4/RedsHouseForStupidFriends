@@ -18,7 +18,7 @@ jobs:
 
     - name: Create ZIP File
       run: |
-        zip -r repository.zip . -x ".git/*"
+        zip -r RedsHouseForStupidFriends.zip . -x ".git/*"
 
     - name: Get Release ID
       id: get_release
@@ -48,7 +48,7 @@ jobs:
             release_id: releaseId
           })
           for (const asset of assets.data) {
-            if (asset.name === "repository.zip") {
+            if (asset.name === "RedsHouseForStupidFriends.zip") {
               await github.rest.repos.deleteReleaseAsset({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -64,6 +64,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.get_release.outputs.upload_url }}
-        asset_path: ./repository.zip
-        asset_name: repository.zip
+        asset_path: ./RedsHouseForStupidFriends.zip
+        asset_name: RedsHouseForStupidFriends.zip
         asset_content_type: application/zip
