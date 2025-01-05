@@ -3,11 +3,13 @@ name: Update Single Release
 on:
   push:
     branches:
-      - main  # Adjust this to the branch you want to trigger the action on
+      - main
+
+permissions:
+  contents: write  # Grant write permissions to access release resources
 
 jobs:
   update_release:
-    name: Update Single Release
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +25,7 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const releaseName = "Latest Release"; // Set your release name here
+          const releaseName = "Latest Release"
           const releases = await github.rest.repos.listReleases({
             owner: context.repo.owner,
             repo: context.repo.repo
